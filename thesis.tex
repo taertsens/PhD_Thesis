@@ -1,4 +1,4 @@
-\documentclass[showinstructions,faculty=firw,department=cws,phddegree=cws]{adsphd}
+\documentclass[showinstructions,faculty=firw,department=bwk,phddegree=bwk]{adsphd}
 %\documentclass[showinstructions,faculty=firw,department=cws,phddegree=cws,doctoralschool=ads]{adsphd}
 %\documentclass[showinstructions,showlabels,coverfontpercent=100,faculty=firw,department=cws,phddegree=cws]{adsphd}
 %\documentclass[croppedpdf,showinstructions,faculty=firw,department=cws,phddegree=cws]{adsphd}
@@ -16,31 +16,33 @@
 % !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
 %%% COVER: Settings %%%
-\title{The Title of Your PhD Dissertation}
+\title{Hybrid Numerical-Physical Modelling of Multidirectional Waves and Currents}
 %\subtitle{Multiscale computing for Dummies}
 
-\author{Your}{Name}
+\author{Tim}{Aertsens}
 
-\supervisor{Prof.~dr.~ir.~F.~Leader}{}
-\supervisor{Prof.~dr.~ir.~S.~Leader}{}
+\supervisor{Prof.~dr.~ir.~J.~Monbaliu}{}
+\supervisor{Prof.~dr.~A.~Toffoli}{}
 \president{Prof.~dr.~ir.~The~Chairman}{}
-\jurymember{Prof.~dr.~ir.~The~One}{}
-\jurymember{Prof.~dr.~ir.~The~Other}{}
-\externaljurymember{Prof.~dr.~External~Jurymember}{Far Away}
+\jurymember{Prof.~dr.~ir.~P.~Rauwoens}{KU Leuven}
+\jurymember{Prof.~dr.~ir.~D.~Huybrechs}{KU Leuven}
+\jurymember{Prof.~dr.~I.~Young}{UniMelb}
+\externaljurymember{Prof.~dr.~M.~Streicher}{UGent}
+\externaljurymember{Prof.~dr.~G.~Ducrozet}{EC Nantes}
 
 % Your research group within the department
 % e.g. iMinds-DistriNet, Scientific Computing Group, ...
-\researchgroup{XXXXX}
-\website{http://www.XXXXX.cs.kuleuven.be} % Leave empty to hide
-\email{first.last@cs.kuleuven.be} % Leave empty to hide
+\researchgroup{Hydraulics and Geotechnics}
+\website{https://bwk.kuleuven.be/hydr} % Leave empty to hide
+\email{tim.aertsens@kuleuven.be} % Leave empty to hide
 
-\address{Celestijnenlaan 200A box 2402}
+\address{Kasteelpark Arenberg 40}
 % \addresscity{B-3001 Leuven} % This is the default value. Note
                               % that 'B-3001 Heverlee' is _incorrect_!!
                               % /[https://www.kuleuven.be/communicatie/marketing/intranet/huisstijl/taalgebruik.html]
 
-\date{January 2016}
-\copyyear{2016}
+\date{April 2025}
+\copyyear{2025}
 %\udc{XXX.XX}            % UDC, deposit number and ISBN are no longer necessary.
 %\depot{XXXX/XXXX/XX}    % Leave out the initial D/ (it is added
                          % automatically)
@@ -144,12 +146,13 @@
 \instructionschapters\cleardoublepage
 
 \includechapter{introduction}
-\includechapter{manual} % Remove this chapter
 
 % Insert here your own chapters
-% Chapters are expected to be in a tex-file with the given name dot
-% tex and in a directory with the given name in the chapters
-% directory.
+\includechapter{background}
+\includechapter{wavemaking}
+\includechapter{wavebreaking}
+\includechapter{wci}
+\includechapter{wsi}
 
 \includechapter{conclusion}
 
@@ -170,7 +173,7 @@
 %\printbibliography[title=\bibname]
 \instructionsbibliography
 
-\includecv{curriculum}
+%\includecv{curriculum}
 
 \includepublications{publications}
 
